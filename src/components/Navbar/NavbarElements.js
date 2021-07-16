@@ -97,7 +97,7 @@ export const NavBtnLink = styled(LinkRouter)`
     background: #016FB9;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #000;
+    color: #FFF;
     font-size: 16px;
     outline: none;
     border: none;
