@@ -76,7 +76,7 @@ export const NavLinks = styled(LinkScroll)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    cursos: pointer;
+    cursor: pointer;
 
     &.active{
         border-bottom: 3px solid #016FB9;

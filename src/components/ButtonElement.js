@@ -15,9 +15,10 @@ export const Button = styled(LinkScroll)`
     align-items: center;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    font-weight: bold;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => (primary ? '#FFF' : '#016FB9')};
+        background: ${({primary}) => (primary ? '#FFF' : '#016FB9')};        
     }
 `
