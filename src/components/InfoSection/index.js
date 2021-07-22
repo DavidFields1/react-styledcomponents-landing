@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Button } from '../ButtonElement';
 import {
     InfoContainer,
@@ -15,25 +15,25 @@ import {
     Img
 } from './InfoElements';
 
-const InfoSection = ({id, lightBg, imgStart, topLine, lightText, heading, description, darkText, buttonLabel, alt, primary, dark, img}) => {    
-    return (        
+const InfoSection = ({data}) => {        
+    return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer lightBg={data.lightBg} id={data.id}>
                 <InfoWrapper>
-                    <InfoRow imgStart={imgStart}>
+                    <InfoRow imgStart={data.imgStart}>
                         <FirstColumn>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
-                                <Heading lightText={lightText}>{heading}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <TopLine>{data.topLine}</TopLine>
+                                <Heading lightText={data.lightText}>{data.heading}</Heading>
+                                <Subtitle darkText={data.darkText}>{data.description}</Subtitle>
                                 <BtnWrap>
-                                    <Button to="home" primary={primary ? 1 : 0} smooth={true} duration={500} spy={true} exact={true} offset={-80} dark={dark ? 1 : 0}>{buttonLabel}</Button>
+                                    <Button to="home" primary={data.primary ? 1 : 0} smooth={true} duration={500} spy={true} exact={1} offset={-80} dark={data.dark ? 1 : 0}>{data.buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </FirstColumn>
                         <SecondColumn>
                             <ImgWrap>
-                                <Img src={img.default} alt={alt}/>
+                                <Img src={data.img.default} alt={data.alt}/>
                             </ImgWrap>
                         </SecondColumn>
                     </InfoRow>
