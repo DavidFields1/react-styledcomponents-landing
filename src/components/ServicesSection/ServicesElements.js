@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ServicesCointainer = styled.div`
-    height: 700px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +9,7 @@ export const ServicesCointainer = styled.div`
     background: #010606;
     padding-bottom: 200px;
     text-align: center;
+    
 
     @media screen and (max-width: 768px){
         height: 1500px;
